@@ -1,20 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList by Anurag</title>
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!-- Main Container -->
     <div class="container">
-        <div class="input-section">
-            <input id="todo-input" type="text" placeholder="What's to be done?"  />
-            <button id="add-button" >
-                
+        <!-- Header Section -->
+        <header>
+            <h1>Todo List</h1>
+            <!-- Input Section for adding todos -->
+            <div class="input-section">
+                <input id="todo-input" type="text" placeholder="Add a todo . . ." class="input w-full max-w-xs" />
+                <button id="add-button" class="btn btn-add ">
+                    <i class="bx bx-plus bx-sm"></i> <!-- Icon for adding todo -->
+                </button>
+            </div>
+        </header>
+        
+        <!-- Todos Filter Section -->
+        <div class="todos-filter">
+            <button id="delete-selected" class="btn btn-ghost delete-selected-btn">
+                Delete Selected
+            </button>
+            <button id="delete-all" class="btn btn-ghost delete-all-btn">
+                Delete All
             </button>
         </div>
+        
+        <!-- List of All Todos -->
+        <ul id="all-todos" class="todos-list">
+            
+        </ul>
+        
+        <!-- Filter Section -->
+        <div class="filters">
+            <!-- Dropdown for filter options -->
+            <div class="dropdown">
+                <button class="dropbtn">Filter</button>
+                <div class="dropdown-content">
+                    <a href="#" id="all">All</a>
+                    <a href="#" id="rem">Pending</a>
+                    <a href="#" id="com">Completed</a>
+                </div>
+            </div>
+            
+            <!-- Display Completed Tasks Count -->
+            <div class="completed-task">
+                <p>Completed: <span id="c-count">0</span></p>
+            </div>
+            
+            <!-- Display Remaining Tasks Count -->
+            <div class="remaining-task">
+                <p>Total Tasks: <span id="r-count">0</span></p>
+            </div>
+        </div>
     </div>
-<script src="/index.html"></script>    
+
+      <!-- JavaScript File -->
+      <script src="/index.html"></script>    
 </body>
 </html>
