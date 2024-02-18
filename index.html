@@ -14,10 +14,10 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <h1>Todo List</h1>
+            <h1 class="white-text">TodoList App</h1>
             <!-- Input Section for adding todos -->
             <div class="input-section">
-                <input id="todo-input" type="text" placeholder="Add a todo . . ." class="input w-full max-w-xs" />
+                <input id="todo-input" type="text" placeholder="What's to be done?" class="input w-full max-w-xs" />
                 <button id="add-button" class="btn btn-add ">
                     <i class="bx bx-plus bx-sm"></i> <!-- Icon for adding todo -->
                 </button>
@@ -27,10 +27,10 @@
         <!-- Todos Filter Section -->
         <div class="todos-filter">
             <button id="delete-selected" class="btn btn-ghost delete-selected-btn">
-                Delete Selected
+                DELETE SELECTED TASKS
             </button>
             <button id="delete-all" class="btn btn-ghost delete-all-btn">
-                Delete All
+                DELETE ALL TASKS
             </button>
         </div>
         
@@ -45,20 +45,20 @@
             <div class="dropdown">
                 <button class="dropbtn">Filter</button>
                 <div class="dropdown-content">
-                    <a href="#" id="all">All</a>
-                    <a href="#" id="rem">Pending</a>
-                    <a href="#" id="com">Completed</a>
+                    <a href="#" id="all">All Tasks</a>
+                    <a href="#" id="rem">Pending Tasks</a>
+                    <a href="#" id="com">Completed Tasks</a>
                 </div>
             </div>
             
             <!-- Display Completed Tasks Count -->
             <div class="completed-task">
-                <p>Completed: <span id="c-count">0</span></p>
+                <p class="white-text">Completed Tasks : <span id="c-count">0</span></p>
             </div>
             
             <!-- Display Remaining Tasks Count -->
             <div class="remaining-task">
-                <p>Total Tasks: <span id="r-count">0</span></p>
+                <p class="white-text">Total Tasks: <span id="r-count">0</span></p>
             </div>
         </div>
     </div>
