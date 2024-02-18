@@ -129,7 +129,7 @@ header .input-section {
 }
 
 .todo-item {
-    background-color: beige;
+    background-color: rgb(151, 152, 169);
     border-radius: 10px;
     margin-bottom: 5px;
 }
@@ -157,6 +157,10 @@ header .input-section {
 
 .white-text{
     color: white;
+}
+
+.golden-text{
+    color: darkgoldenrod;
 }
 
 .line {
@@ -188,6 +192,7 @@ header .input-section {
     text-decoration-line: none;
     transition: .2s all cubic-bezier(.4, 0, .2, 1);
     display: inline-flex;
+    background-color: darkgoldenrod;
 }
 
 .btn:hover {
@@ -196,38 +201,38 @@ header .input-section {
 }
 
 .btn-add {
-    background-color: rgb(255, 221, 0);
-    color: white;
+    background-color: darkgoldenrod;
+    color: black;
 }
 .btn-add:hover {
-    background-color: white;
-    color: rgb(255, 221, 0);
+    background-color:rgb(4, 4, 97);
+    color: white;
 }
 
 .btn-success {
     opacity: 1;
-    background-color: rgb(50, 177, 50);
-    color: white;
+    background-color: rgb(9, 139, 9);
+    color:white;
 }
 .btn-success:hover {
-    background-color: white;
-    color: rgb(50, 177, 50);
+    background-color: lime;
+    color: black;
 }
 
 .btn-error {
     opacity: 1;
-    background-color: rgb(246, 77, 4);
+    background-color: rgb(129, 44, 7);
     color: white;
 }
 .btn-error:hover {
-    background-color: white;
-    color: rgb(246, 77, 4);
+    background-color: rgb(238, 84, 84);
+    color: black;
 }
 
 /* Dropdown styles */
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color:darkgoldenrod;
+    color: rgb(0, 0, 0);
     padding: 10px 16px;
     font-size: 16px;
     border: none;
@@ -250,6 +255,7 @@ header .input-section {
 }
 
 .dropdown-content a {
+    background-color: darkgoldenrod;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -257,7 +263,8 @@ header .input-section {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color:rgb(4, 4, 97);
+    color: white;
 }
 
 .dropdown:hover .dropdown-content {
@@ -265,7 +272,8 @@ header .input-section {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: rgb(4, 4, 97);
+    color: white;
 }
 
 /* Responsive styles */
